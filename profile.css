@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1F1B24;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.profile-image{
+max-width: 3%;
+height: auto;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header ul li {
+    display: inline;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #BB86FC;
+    text-decoration: none;
+}
+
+section {
+    padding: 80px 20px;
+    /* Add padding to make space below the fixed header */
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+h2 {
+    color: #BB86FC;
+}
+
+a {
+    color: #03DAC5;
+}
+
+.card {
+    background-color: #1F1B24;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    background-color: #1F1B24;
+    color: #E0E0E0;
+}
+
+button {
+    background-color: #03DAC5;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #BB86FC;
+}
+
+/* Fixed header adjustment for content */
+body {
+    padding-top: 100px;
+    /* Adds padding for the fixed header */
+}
+
+footer {
+    background-color: #1F1B24;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 90px 10px;
+        margin: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
