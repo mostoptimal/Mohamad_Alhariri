@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <title>Input to Paragraph</title>
+    <style>
+        body {
+            background-color: #303030;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        #outputDiv {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="inputText" placeholder="Enter text here">
+            <label class="mdl-textfield__label" for="inputText">Enter text</label>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="displayText()">
+            Submit
+        </button>
+        <div id="outputDiv">
+          <p id="outputText"></p>
+        </div>
+    </div>
+
+    <script>
+        function displayText() {
+            var inputText = document.getElementById("inputText").value;
+            var outputDiv = document.getElementById("outputDiv");
+            var newParagraph = document.getElementById("outputText");
+            newParagraph.textContent = inputText;
+        }
+      
+        function callAi(inputText) {
+          
+        }
+    </script>
+    <script src="a.js"></script>
+</body>
+</html>
