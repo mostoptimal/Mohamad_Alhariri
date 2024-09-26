@@ -1,106 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Mohamad AlHariri">
-    <title>Mohamad AlHariri - Personal Website</title>
-    <link rel="stylesheet" href="profile.css">
+    <title>Mo Doe - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
 <body>
-    <!-- Fixed Header -->
     <header>
-        <ul>
-            <li><img src="profile.jpg" alt="profile" class="profile-image"> Mohamad AlHariri</li>
-            <li>| Address: Bahnhofstrasse 4, 35390 Gießen</li>
-            <li>| Email: <a href="mailto:mostoptimal@hotmail.com">mostoptimal@hotmail.com</a></li>
-            <li>| Phone: (+49) 0160-3436802</li>
-        </ul>
         <nav>
+            <div class="logo">MH</div>
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <div class="card">
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h1>John Doe</h1>
+                <h2>Web Developer & Designer</h2>
+                <p>Crafting beautiful and functional websites</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I am Mohamad AlHariri, an aspiring IT professional currently studying at Technische Hochschule
-                Mittelhessen Gießen. I enjoy improving my social skills and working with people, which complements my
-                technical knowledge.</p>
-        </div>
-    </section>
+            <div class="about-content">
+                <img src="profile-picture.jpg" alt="John Doe" class="profile-pic">
+                <p>Hello! I'm Mo, a web developer with Entry Level of experience in creating responsive and user-friendly websites. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
+            </div>
+        </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <div class="card">
-            <h2>Education</h2>
-            <ul>
-                <li>Informatics (01.10.2019 - Present) - Technische Hochschule Mittelhessen Gießen</li>
-                <li>Goethe C1 Certificate (29.04.2019 - 19.07.2019) - Volkshochschule Gießen</li>
-                <li>B2 Level German (21.08.2017 - 15.12.2017) - DEKRA Akademie GmbH</li>
-                <li>Informatics (Sep 2009 - Apr 2012) - Damascus University</li>
-            </ul>
-        </div>
-    </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="card">
-            <h2>Experience</h2>
-            <ul>
-                <li>IT-Admin Assistant (11.2023 - 11.2024) - Johanniter-Unfall-Hilfe e.V.</li>
-                <li>Emails & Website Text Support (2010 - 2012) - Alsalamat Co (Syria)</li>
-                <li>Self-employed Computer Technician (2009 - 2011) - Syria</li>
-            </ul>
-        </div>
-    </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>E-commerce Website</h3>
+                    <p>A fully responsive online store built with React and Node.js</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Portfolio Template</h3>
+                    <p>A customizable portfolio template for creatives</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="card">
-            <h2>Skills</h2>
-            <ul>
-                <li>Languages: German (C1), English (Intermediate), Arabic (Native)</li>
-                <li>Operating Systems: Windows, Linux</li>
-                <li>Software/Hardware Diagnosis and Repair</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="card">
-            <h2>Contact Me</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send</button>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
             </form>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Mohamad AlHariri</p>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
 
-    <script src="profile.js"></script>
+    <script src="portfolio.js"></script>
 </body>
-
 </html>
