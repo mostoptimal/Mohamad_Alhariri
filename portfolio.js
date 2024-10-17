@@ -114,3 +114,42 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+const skillsList = [
+  "JavaScript",
+  "HTML5",
+  "CSS3",
+  "React",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "Git",
+  "GitHub",
+];
+const skillLst = {
+  "JavaScript": 0.3,
+  "HTML5": 0.6,
+  "CSS3": 0.3,
+  "React": 0.2,
+  "Node.js": 0.2,
+  "Express.js": 0.1,
+  "MongoDB": 0.1,
+  "Git": 0.1,
+  "GitHub": 0.1,
+};
+
+const formatter = Intl.NumberFormat('en-US', {
+  style: 'percent',
+})
+
+const star = "⭐";
+const skillDiv = document.querySelector(".skill-item");
+skillDiv.forEach((skill) => {
+  const para = skillDiv.appendChild(document.createElement("p"));
+  para.textContent = formatter.format(skillLst[skill]);
+});
+
+skillItem = document.querySelector(".skill-item");
+skillItem.addEventListener("click", function () {
+  
+});
