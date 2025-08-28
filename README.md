@@ -1,7 +1,8 @@
   <!-- Fixed Header -->
   <header>
+  <h3>My CV:</h3>
     <h1>Mohamad AlHariri</h1>
-    <p>Address: Bahnhofstrasse 4, 35390 Gießen | Email: <a href="mailto:mostoptimal@hotmail.com">mostoptimal@hotmail.com</a> | Phone: (+49) 0160-3436802</p>
+    <p>Address:Gießen | Email: <a href="mailto:mohamad.alhariri@gmx.de">mostoptimal@hotmail.com</a> | Phone: (+49) 0160-3436802</p>
     <nav>
       <ul>
         <li><a href="#about">About Me</a></li>
