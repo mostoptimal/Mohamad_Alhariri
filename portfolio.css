@@ -54,6 +54,12 @@ nav ul li a:hover {
   color: #4da6ff;
 }
 
+.logo img {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("hero-background.jpg");
+  width: 10%;
+}
+
 /* Main content */
 main {
   padding-top: 80px; /* To account for fixed header */
@@ -187,6 +193,27 @@ h3 {
 
 .project-link:hover {
   background-color: #3385cc;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  font-family: Arial, Helvetica, sans-serif;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /* Contact Section */
