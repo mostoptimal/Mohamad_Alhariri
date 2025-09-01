@@ -65,6 +65,8 @@ function easeInOutCubic(t, b, c, d) {
 
 function handleFormSubmit(e) {
   e.preventDefault();
+
+  const form = e.target;
   const name = this.querySelector('input[name="name"]').value;
   const email = this.querySelector('input[name="email"]').value;
   const message = this.querySelector('textarea[name="message"]').value;
@@ -73,6 +75,15 @@ function handleFormSubmit(e) {
     alert("Please fill in all fields");
     return;
   }
+
+  const subject = encodeURIComponent(
+    "A Message via Mohamads Website on Github from:",
+    name
+  );
+  const body = encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+  );
+  window.location.href = `mailto:mostoptimal@hotmail.com?subject=${subject}&body=${body}`;
 
   // Here you would typically send the form data to a server
   // For this example, we'll just log it to the console
